@@ -36,7 +36,12 @@ const gallery = {
 }
 
 function updateGallery(gallery, artwork, newValue) {
-  gallery[artwork] = newValue
+  if (gallery.hasOwnProperty(artwork)) {
+    gallery[artwork] = newValue
+  } else{
+    gallery[artwork] = newValue
+  }
+  
 }
 updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506')
 updateGallery(gallery, 'The Persistence of Memory', 'Salvador Dali')

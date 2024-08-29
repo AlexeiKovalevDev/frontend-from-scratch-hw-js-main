@@ -19,7 +19,7 @@ const WEB_TECH_IMAGES = [
 ]
 let indexImg = 0
 
-const imgElement = documet.getElementById("web-tech-image")
+const imgElement = document.getElementById("web-tech-image")
 
 imgElement.src = WEB_TECH_IMAGES[indexImg]
 
@@ -40,5 +40,5 @@ btmPrev.addEventListener("click", function(){
     indexImg = WEB_TECH_IMAGES.length -1
   }
   imgElement.src = WEB_TECH_IMAGES[indexImg]
-})
+}) 
 

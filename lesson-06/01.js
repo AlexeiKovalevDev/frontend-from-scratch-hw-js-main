@@ -40,5 +40,5 @@ btmPrev.addEventListener("click", function(){
     indexImg = WEB_TECH_IMAGES.length -1
   }
   imgElement.src = WEB_TECH_IMAGES[indexImg]
-}) 
+})
 

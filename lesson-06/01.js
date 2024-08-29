@@ -36,7 +36,7 @@ btmNext.addEventListener("click", function() {
 
 btmPrev.addEventListener("click", function(){
   indexImg = indexImg - 1;
-  if(indexImg <= WEB_TECH_IMAGES.length){
+  if(indexImg < 0){
     indexImg = WEB_TECH_IMAGES.length -1
   }
   imgElement.src = WEB_TECH_IMAGES[indexImg]

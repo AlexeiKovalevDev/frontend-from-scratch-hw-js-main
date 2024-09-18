@@ -29,7 +29,8 @@ const filter = (array,callback) => {
     if(callback(array[i], i)){
       newArray.push(array[i])
     }
-    
+    console.log(newArray);
   }
   return newArray
+  
 }
